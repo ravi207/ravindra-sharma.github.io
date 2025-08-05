@@ -5,59 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ravindra Sharma – Portfolio</title>
   <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #2980b9;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --card-bg: #fff;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-color);
       margin: 0;
       padding: 0;
-      color: #333;
+      color: var(--text-color);
+      line-height: 1.6;
     }
+
     header {
-      background: #2c3e50;
+      background: var(--primary-color);
       color: white;
-      padding: 20px;
+      padding: 40px 20px 20px 20px;
       text-align: center;
     }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
+
     h2 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
     }
+
     .project, .job {
-      background: white;
-      padding: 15px;
-      margin: 10px 0;
-      border-left: 4px solid #2c3e50;
+      background: var(--card-bg);
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 5px solid var(--primary-color);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-radius: 6px;
     }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
+
     .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 10px;
     }
+
     .skills div {
       background: #ecf0f1;
-      padding: 5px 10px;
-      border-radius: 4px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.95rem;
     }
+
     footer {
       text-align: center;
       font-size: 0.9em;
-      color: #999;
-      padding: 10px 0;
+      color: #777;
+      padding: 20px;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="profile.jpeg" alt="Ravindra Sharma">
     <h1>Ravindra Sharma</h1>
     <p>Data Scientist at Fractal | NLP & ML Enthusiast</p>
     <p>
@@ -74,7 +120,6 @@
 
   <section>
     <h2>Experience</h2>
-
     <div class="job">
       <strong>Data Scientist – Fractal (Feb 2023 – Present)</strong>
       <ul>
@@ -83,7 +128,6 @@
         <li>Improved revenue by 10% through accurate promo planning.</li>
       </ul>
     </div>
-
     <div class="job">
       <strong>Data Scientist – NIRA (Jun 2019 – Feb 2023)</strong>
       <ul>
@@ -91,7 +135,6 @@
         <li>End-to-end deployment of ML models in financial decision systems.</li>
       </ul>
     </div>
-
     <div class="job">
       <strong>Data Analyst Intern – NIRA (Jun 2018 – Nov 2018)</strong>
     </div>
@@ -100,12 +143,12 @@
   <section>
     <h2>Projects & Publications</h2>
     <div class="project">
-      <strong>Recommender System</strong> – Collaborative filtering using MovieLens  
-      <br/>🔗 <a href="https://github.com/ravi207/RecommenderSystem">GitHub Link</a>
+      <strong>Recommender System</strong> – Collaborative filtering using MovieLens<br/>
+      🔗 <a href="https://github.com/ravi207/RecommenderSystem">GitHub Link</a>
     </div>
     <div class="project">
-      <strong>Toxic Content Detection</strong> – 83% accuracy using NLP  
-      <br/>📄 <a href="https://link.springer.com/chapter/10.1007/978-981-16-0942-8_70">Springer Publication</a>
+      <strong>Toxic Content Detection</strong> – 83% accuracy using NLP<br/>
+      📄 <a href="https://link.springer.com/chapter/10.1007/978-981-16-0942-8_70">Springer Publication</a>
     </div>
   </section>
 
@@ -126,7 +169,7 @@
   </section>
 
   <footer>
-    © 2025 Ravindra Sharma. All rights reserved.
+    &copy; 2025 Ravindra Sharma. All rights reserved.
   </footer>
 
 </body>
